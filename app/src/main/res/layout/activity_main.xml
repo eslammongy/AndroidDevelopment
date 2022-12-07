@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,23 +11,40 @@
         android:id="@+id/textResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="30sp"
-       android:textFontWeight="800"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/press_on_button"
+        android:textSize="20sp"
+        android:fontFamily="monospace"
+        android:textFontWeight="800"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="100dp"
+        android:paddingHorizontal="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="p" />
 
+    <ImageView
+        android:id="@+id/diceRollRes"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/dice_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResult"
+        app:layout_constraintBottom_toTopOf="@id/btnShowResult"
+        android:contentDescription="@string/todo" />
+
     <Button
         android:id="@+id/btnShowResult"
         android:layout_width="200dp"
         android:layout_height="80dp"
+        android:text="@string/press_here"
         android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textResult"
+        app:layout_constraintTop_toBottomOf="@+id/diceRollRes"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

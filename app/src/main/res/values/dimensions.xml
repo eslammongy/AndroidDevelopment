@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimensions name="text_size">20sp</dimensions>
-    <dimensios name="small_padding">8dp</dimensios>
-    <dimensios name="layout_margin">16dp</dimensios>
-</resources>

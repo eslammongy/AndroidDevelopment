@@ -13,6 +13,7 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
     <style name="NameStyle">
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:paddingTop">@dimen/small_padding</item>
@@ -21,5 +22,4 @@
         <item name="android:layout_marginTop">@dimen/layout_margin</item>
     </style>
 
-    <dimen name="small_padding">10</dimen>
 </resources>

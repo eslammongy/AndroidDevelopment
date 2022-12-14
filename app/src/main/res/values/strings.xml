@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ColorMyViews</string>
+    <string name="color_me_app">Color Me App</string>
+    <string name="red_box">Red Box</string>
+    <string name="green_box">Green Box</string>
+    <string name="orange_box">Orange Box</string>
 </resources>

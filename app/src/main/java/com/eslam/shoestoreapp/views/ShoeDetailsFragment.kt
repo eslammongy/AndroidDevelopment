@@ -1,4 +1,4 @@
-package com.eslam.shoestoreapp
+package com.eslam.shoestoreapp.views
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

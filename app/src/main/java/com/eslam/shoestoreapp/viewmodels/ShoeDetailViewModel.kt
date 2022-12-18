@@ -6,11 +6,11 @@ import com.eslam.shoestoreapp.models.ShoeItem
 
 class ShoeDetailViewModel: ViewModel() {
 
-    private val shoeName = MutableLiveData<String>()
-    private val shoePrise = MutableLiveData<String>()
-    private val shoeSize = MutableLiveData<String>()
-    private val shoeBrand = MutableLiveData<String>()
-    private val shoeDesc = MutableLiveData<String>()
+     val shoeName = MutableLiveData<String>()
+     val shoePrise = MutableLiveData<String>()
+     val shoeSize = MutableLiveData<String>()
+     val shoeBrand = MutableLiveData<String>()
+     val shoeDesc = MutableLiveData<String>()
 
     fun validatesFields():Boolean{
         return sureFieldsNotEmpty(shoeName) &&

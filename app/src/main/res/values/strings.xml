@@ -11,4 +11,18 @@
     <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="email">Email</string>
+    <string name="welcome_to_shoe_store">Welcome To Shoe Store</string>
+    <string name="welcome_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don\'t look even slightly believable.</string>
+    <string name="skip">Skip</string>
+    <string name="instructions">Instructions</string>
+    <string name="next">Next</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_brand">shoe brand</string>
+    <string name="shoe_size">shoe size</string>
+    <string name="shoe_desc">shoe desc</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="shoe_price">shoe price</string>
+    <string name="empty_list">Empty List</string>
+    <string name="todo">TODO</string>
 </resources>

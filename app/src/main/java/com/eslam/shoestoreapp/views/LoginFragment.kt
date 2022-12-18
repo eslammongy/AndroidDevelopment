@@ -1,12 +1,12 @@
 package com.eslam.shoestoreapp.views
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.eslam.shoestoreapp.R
 import com.eslam.shoestoreapp.databinding.FragmentLoginBinding
 
@@ -28,8 +28,10 @@ class LoginFragment : Fragment() {
             navigateLoginToAnother()
         }
 
+
         return loginBinding.root
     }
+
 
     private fun navigateLoginToAnother(){
         findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToOnBoardingWelcomeFragment())

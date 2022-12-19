@@ -1,4 +1,5 @@
 package com.eslam.trivia.model
 
-class Question {
-}
+data class Question(
+    val text: String,
+    val answers: List<String>)

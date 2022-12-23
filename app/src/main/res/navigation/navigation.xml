@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.eslam.triviaapp.views.HomeScreen"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeScreen_to_onGame"
+            app:destination="@id/onGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/onGame"
+        android:name="com.eslam.triviaapp.views.OnGame"
+        android:label="OnGame" >
+        <action
+            android:id="@+id/action_onGame_to_wonGame"
+            app:destination="@id/wonGame" />
+        <action
+            android:id="@+id/action_onGame_to_gameOver"
+            app:destination="@id/gameOver" />
+        <action
+            android:id="@+id/action_onGame_to_homeScreen"
+            app:destination="@id/homeScreen" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/wonGame"
+        android:name="com.eslam.triviaapp.views.WonGame"
+        android:label="WonGame" >
+        <action
+            android:id="@+id/action_wonGame_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOver"
+        android:name="com.eslam.triviaapp.views.GameOver"
+        android:label="GameOver" >
+        <action
+            android:id="@+id/action_gameOver_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+</navigation>

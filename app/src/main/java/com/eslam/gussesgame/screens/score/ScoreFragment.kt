@@ -14,7 +14,7 @@ class ScoreFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_score, container, false)
+        return inflater.inflate(R.layout.score_fragment, container, false)
     }
 
 }

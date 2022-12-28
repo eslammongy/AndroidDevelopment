@@ -1,16 +1,29 @@
 package com.eslam.gussesgame.screens.game
 
 import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class GameViewModel : ViewModel() {
-    var currentWord= ""
-    var userScore = 0
-    private lateinit var wordsList : MutableList<String>
+
+    private var currentWord = MutableLiveData<String>()
+    val word: LiveData<String>
+    get() = currentWord
+
+
+    private val userScore = MutableLiveData<Int>()
+    val score : LiveData<Int>
+    get() = userScore
+
+    private lateinit var wordsList: MutableList<String>
+
     init {
-       resetList()
+        resetList()
         nextWord()
+        userScore.value = 0
     }
+
     private fun resetList() {
         wordsList = mutableListOf(
             "queen",
@@ -37,23 +50,25 @@ class GameViewModel : ViewModel() {
         )
         wordsList.shuffle()
     }
-    private fun nextWord(){
-        if (wordsList.isEmpty()){
-            // game finished
-        }else{
-            currentWord = wordsList.removeAt(0)
+
+    private fun nextWord() {
+        if (wordsList.isEmpty()) {
+           resetList()
+        } else {
+            currentWord.value = wordsList.removeAt(0)
         }
     }
 
-    fun onSkip(){
-        userScore--
+    fun onSkip() {
+        userScore.value = (userScore.value)?.minus(1)
         nextWord()
     }
 
-    fun onCorrect(){
-        userScore++
+    fun onCorrect() {
+        userScore.value = (userScore.value)?.plus(1)
         nextWord()
     }
+
     override fun onCleared() {
         super.onCleared()
         Log.i("GameViewModel", "Game View Model Destroyed")

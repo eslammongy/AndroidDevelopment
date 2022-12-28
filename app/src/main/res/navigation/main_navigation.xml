@@ -8,8 +8,8 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.eslam.gussesgame.screens.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        android:label="Home"
+        tools:layout="@layout/home_fragment" >
         <action
             android:id="@+id/action_homeFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
@@ -17,8 +17,8 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.eslam.gussesgame.screens.game.GameFragment"
-        android:label="fragment_game"
-        tools:layout="@layout/fragment_game" >
+        android:label="Game"
+        tools:layout="@layout/game_fragment" >
         <action
             android:id="@+id/action_gameFragment_to_scoreFragment"
             app:destination="@id/scoreFragment" />
@@ -26,10 +26,15 @@
     <fragment
         android:id="@+id/scoreFragment"
         android:name="com.eslam.gussesgame.screens.score.ScoreFragment"
-        android:label="fragment_score"
-        tools:layout="@layout/fragment_score" >
+        android:label="Score"
+        tools:layout="@layout/score_fragment" >
         <action
             android:id="@+id/action_scoreFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
     </fragment>
 </navigation>

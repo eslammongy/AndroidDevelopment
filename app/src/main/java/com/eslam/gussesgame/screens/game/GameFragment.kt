@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.eslam.gussesgame.R
@@ -24,31 +25,33 @@ class GameFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.game_fragment, container, false)
         gameViewModel = ViewModelProvider(this)[GameViewModel::class.java]
 
+        binding.gameViewModel = gameViewModel
+        binding.lifecycleOwner = this
+
         binding.correctButton.setOnClickListener {
             gameViewModel.onCorrect()
-            updateUserScore()
-            updateGuessWord()
-        }
-        binding.skipButton.setOnClickListener {
-            gameViewModel.onSkip()
-            updateUserScore()
-            updateGuessWord()
         }
 
-        updateUserScore()
-        updateGuessWord()
+
+        binding.skipButton.setOnClickListener {
+            gameViewModel.onSkip()
+        }
+
+        gameViewModel.score.observe(viewLifecycleOwner) { score ->
+            binding.scoreText.text = score.toString()
+        }
+        gameViewModel.word.observe(viewLifecycleOwner){word->
+            binding.wordText.text = word.toString()
+        }
+
+
         return binding.root
     }
 
     fun gameFinished(){
-        findNavController().navigate(GameFragmentDirections.actionGameFragmentToScoreFragment())
-    }
-    private fun updateGuessWord(){
-        binding.wordText.text = gameViewModel.currentWord
-    }
-
-    private fun updateUserScore(){
-        binding.scoreText.text =  gameViewModel.userScore.toString()
+        val currentScore = gameViewModel.score.value ?: 0
+        val action = GameFragmentDirections.actionGameFragmentToScoreFragment(currentScore)
+        findNavController().navigate(action)
     }
 
 }

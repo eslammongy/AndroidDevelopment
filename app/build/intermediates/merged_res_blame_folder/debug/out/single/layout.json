@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\asteroids_list_item.xml",
+        "source": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\src\\main\\res\\layout\\asteroids_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\src\\main\\res\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_detail.xml",
+        "source": "C:\\Users\\eslam\\Downloads\\pc\\native_apps\\Asteroid-Radar-App\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+    }
+]

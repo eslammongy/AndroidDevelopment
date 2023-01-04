@@ -1,0 +1,46 @@
+com/eslammongy/asteroidradar/DataBinderMapperImpl.java
+ com.eslammongy.asteroidradar.DataBinderMapperImpl
+ com.eslammongy.asteroidradar.DataBinderMapperImpl$InnerBrLookup
+ com.eslammongy.asteroidradar.DataBinderMapperImpl$InnerLayoutIdLookup
+com/eslammongy/asteroidradar/databinding/AsteroidsListItemBinding.java
+ com.eslammongy.asteroidradar.databinding.AsteroidsListItemBinding
+com/eslammongy/asteroidradar/database/AsteroidDao_Impl.java
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl$1
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl$2
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl$3
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl$4
+ com.eslammongy.asteroidradar.database.AsteroidDao_Impl$5
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+com/eslammongy/asteroidradar/databinding/FragmentDetailBindingImpl.java
+ com.eslammongy.asteroidradar.databinding.FragmentDetailBindingImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+com/eslammongy/asteroidradar/databinding/FragmentMainBindingImpl.java
+ com.eslammongy.asteroidradar.databinding.FragmentMainBindingImpl
+com/eslammongy/asteroidradar/ui/detail/DetailFragmentArgs.java
+ com.eslammongy.asteroidradar.ui.detail.DetailFragmentArgs
+ com.eslammongy.asteroidradar.ui.detail.DetailFragmentArgs$1
+ com.eslammongy.asteroidradar.ui.detail.DetailFragmentArgs$Builder
+com/eslammongy/asteroidradar/databinding/AsteroidsListItemBindingImpl.java
+ com.eslammongy.asteroidradar.databinding.AsteroidsListItemBindingImpl
+com/eslammongy/asteroidradar/BR.java
+ com.eslammongy.asteroidradar.BR
+com/eslammongy/asteroidradar/BuildConfig.java
+ com.eslammongy.asteroidradar.BuildConfig
+com/eslammongy/asteroidradar/database/AsteroidsDatabase_Impl.java
+ com.eslammongy.asteroidradar.database.AsteroidsDatabase_Impl
+ com.eslammongy.asteroidradar.database.AsteroidsDatabase_Impl$1
+com/eslammongy/asteroidradar/ui/main/MainFragmentDirections.java
+ com.eslammongy.asteroidradar.ui.main.MainFragmentDirections
+ com.eslammongy.asteroidradar.ui.main.MainFragmentDirections$1
+ com.eslammongy.asteroidradar.ui.main.MainFragmentDirections$ActionShowDetail
+com/eslammongy/asteroidradar/databinding/FragmentDetailBinding.java
+ com.eslammongy.asteroidradar.databinding.FragmentDetailBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
+com/eslammongy/asteroidradar/databinding/FragmentMainBinding.java
+ com.eslammongy.asteroidradar.databinding.FragmentMainBinding
+com/eslammongy/asteroidradar/DataBindingTriggerClass.java
+ com.eslammongy.asteroidradar.DataBindingTriggerClass
